@@ -9,19 +9,65 @@
   <body>
     <div id="app">
       <main>
-        <div class="main-container"></div>
-        <div class="back">
-          <img src="assets/icons/arrow-left-02.svg" alt="" />
-          <span>Voltar</span>
+        <div class="main-container">
+          <div class="back">
+            <img src="assets/icons/arrow-left-02.svg" alt="" />
+            <span>Voltar</span>
+          </div>
+
+          <h1>Formulário de matrícula</h1>
+          <p>
+            Preencha os dados abaixo para matricular seu filho na escola de
+            educação infantil Estrelas do Amanhã.
+          </p>
+          <form enctype="multipart/form-data">
+            <fieldset class="child-nfo">
+              <legend>Informaçoes da crinça</legend>
+
+              <div class="input-wrapper">
+                <label for="fullname">Nome Completo</label>
+                <input
+                  type="text"
+                  id="fullname"
+                  placeholder="Qual o nome da criança"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="birth">Data de nascimento</label>
+                <input type="date" id="birth" lang="pt-BR" />
+
+                <div class="select-wrapper">
+                  <label for="gender">Sexo</label>
+                  <select name="gender" id="gender">
+                    <option value="female">Feminino</option>
+                    <option value="male">Masculino</option>
+                    <option value="na">Prefiro não dizer</option>
+                  </select>
+                </div>
+
+                <div class="textarea-wrapper">
+                  <label for="medical-info">Informaçoes Medicas</label>
+                  <textarea
+                    name="medical-info"
+                    id="medical-info"
+                    cols="30"
+                    rows="10"
+                    placeholder="A criança possui alguma condição médica que a  escola dever estar ciente(se sim, especifique)"
+                  >
+                  </textarea>
+                </div>
+
+                <div class="droparea-wrapper">
+                  <input type="file" name="birth-file" id="birth-file">
+                  <img src="assets/icons/cloud-upload.svg" alt="enviar arquivos">
+                  <p>clique aqui <br> para selecionar os arquivos</p>
+                </div>
+              </div>
+            </fieldset>
+          </form>
         </div>
-
-        <h1>Formulário de matrícula</h1>
-        <p>
-          Preencha os dados abaixo para matricular seu filho na escola de
-          educação infantil Estrelas do Amanhã.
-        </p>
       </main>
-
       <aside>
         <div class="aside-container">
           <header>
